@@ -1,0 +1,14 @@
+name: Run Eslint
+
+on:
+  pull_request:
+    branches: ["staging"]
+    paths:
+      - "**/*.js"
+      - "**/*.ts"
+      - "**/*.tsx"
+      - ".github/workflows/eslint.yml"
+
+jobs:
+  call-workflow:
+    uses: ITinternalDiMartino/ci-workflows/.github/workflows/eslint.yml@main

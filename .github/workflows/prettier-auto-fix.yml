@@ -1,0 +1,14 @@
+name: Run Prettier Auto-Fix
+
+on:
+  pull_request:
+    branches: ["staging"]
+    paths:
+      - "**/*.js"
+      - "**/*.ts"
+      - "**/*.tsx"
+      - ".github/workflows/prettier-auto-fix.yml"
+
+jobs:
+  call-workflow:
+    uses: ITinternalDiMartino/ci-workflows/.github/workflows/prettier-auto-fix.yml@main

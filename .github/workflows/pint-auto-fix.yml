@@ -1,0 +1,14 @@
+name: Fix PHP code style issues
+
+on:
+  pull_request:
+    paths:
+      - "**.php"
+      - ".github/workflows/pint-auto-fix.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  php-code-styling:
+    uses: ITinternalDiMartino/ci-workflows/.github/workflows/pint-auto-fix.yml@main
