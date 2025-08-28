@@ -71,6 +71,5 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 ## Credits
 
 -   [:author_name](https://github.com/:author_username)
--   [All Contributors](../../contributors)
 
 © 2025 IT Department
