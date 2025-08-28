@@ -276,7 +276,7 @@ $description = ask('Package description', "This is my package {$packageSlug}");
 $usePhpStan = confirm('Enable PhpStan?', true);
 $useLaravelPint = confirm('Enable Laravel Pint?', true);
 $useDependabot = confirm('Enable Dependabot?', true);
-$useLaravelRay = confirm('Use Ray for debugging?', true);
+$useLaravelRay = confirm('Use Ray for debugging?');
 $useUpdateChangelogWorkflow = confirm('Use automatic changelog updater workflow?', true);
 
 writeln('------');
@@ -366,5 +366,6 @@ if (! $useUpdateChangelogWorkflow) {
 }
 
 confirm('Execute `composer install` and run tests?') && run('composer install && composer test');
+confirm('Execute `npm install` ?') && run('npm install');
 
 confirm('Let this script delete itself?', true) && unlink(__FILE__);
