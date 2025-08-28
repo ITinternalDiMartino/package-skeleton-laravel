@@ -2,6 +2,7 @@ name: Fix PHP code style issues
 
 on:
   pull_request:
+    branches: ["staging"]
     paths:
       - "**.php"
       - ".github/workflows/pint-auto-fix.yml"
