@@ -54,8 +54,8 @@ php artisan vendor:publish --tag=":package_slug-views"
 ## Usage
 
 ```php
-$variable = new VendorName\Skeleton();
-echo $variable->echoPhrase('Hello, VendorName!');
+$:variable = new VendorName\Skeleton();
+echo $:variable->echoPhrase('Hello, VendorName!');
 ```
 
 ## Testing
@@ -70,6 +70,6 @@ Please see [CHANGELOG](CHANGELOG.md) for more information on what has changed re
 
 ## Credits
 
--   [:author_name](https://github.com/:author_username)
+- [:author_name](https://github.com/:author_username)
 
 © 2025 IT Department
