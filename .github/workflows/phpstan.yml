@@ -2,7 +2,7 @@ name: PHPStan
 
 on:
   pull_request:
-    branches: ["staging"]
+    branches: ["main"]
     paths:
       - "**.php"
       - "phpstan.neon.dist"

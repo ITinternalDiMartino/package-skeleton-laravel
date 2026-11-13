@@ -2,7 +2,7 @@ name: Run Eslint
 
 on:
   pull_request:
-    branches: ["staging"]
+    branches: ["main"]
     paths:
       - "**/*.js"
       - "**/*.ts"

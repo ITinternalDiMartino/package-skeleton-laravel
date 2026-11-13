@@ -2,7 +2,7 @@ name: run tests
 
 on:
   pull_request:
-    branches: ["staging"]
+    branches: ["main"]
     paths:
       - "**.php"
       - ".github/workflows/run-tests.yml"
@@ -12,10 +12,9 @@ on:
 
 jobs:
   tests:
-    uses: ITinternalDiMartino/ci-workflows/.github/workflows/laravel-packages-run-tests.yml@main
+    uses: ITinternalDiMartino/ci-workflows/.github/workflows/pest-packages.yml@main
     with:
       php-versions: '["8.3"]'
-      laravel-versions: '["12.*", "11.*"]'
       stability: '["prefer-stable"]'
     secrets:
       GH_TOKEN: ${{ secrets.GH_TOKEN }}
